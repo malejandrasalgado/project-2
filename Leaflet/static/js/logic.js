@@ -26,9 +26,9 @@ var outdoorsmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tile
 
 // Initialize all of the LayerGroups we'll be using
 // one layer for the earthquake points and another for the tectonic plates
-var locationmap = new L.LayerGroup();
-
-
+var locationmap2020 = new L.LayerGroup();
+var locationmap2019 = new L.LayerGroup();
+var locationmapDif = new L.LayerGroup();
 
 // Create a baseMaps objects to hold the Layers
 
@@ -42,8 +42,9 @@ var baseMaps = {
 // Create an overlayMaps object to hold the earthquakes layer
 
 var overlayMaps = {
-    "Location": locationmap
-    
+    "2020": locationmap2020,
+    "2019": locationmap2019,
+    "Change": locationmapDif
 };
 
 // Create the map object with options
@@ -74,7 +75,7 @@ info.onAdd = function() {
 info.addTo(map);
 
   // Link for Earthquakes geoJSON
-var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/Locations.geojson"
+var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/data.geojson"
 
 console.log(locationJSON)
 
@@ -108,9 +109,10 @@ d3.json(locationJSON).then(function(location){
         sensor = geoLayer[i]
         // get a color to represent the magnitude of the quake
         color = setColor(sensor.properties.Sensor);
-        console.log("Coords ",[sensor.geometry.coordinates[0],sensor.geometry.coordinates[1]] );
+        console.log("Coords ",[sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]] );
+        
         // Add a marker for the location
-        L.circleMarker([sensor.geometry.coordinates[0],sensor.geometry.coordinates[1]], {
+        L.circleMarker([sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]], {
             "radius": 3,
             "fillColor": color,
             "color": color,
@@ -119,50 +121,13 @@ d3.json(locationJSON).then(function(location){
             "opacity": 1
         },
         // Add a popup with the quake data for when the marker is clicked
-        ).addTo(locationmap).bindPopup(("<h4>Location: " + sensor.properties.Sensor));
+        ).addTo(locationmap2020).bindPopup(("<h4>Location: " + sensor.properties.Sensor));
         //"</h4><hr><p>Date & Time: " + new Date(quake.properties.time) + 
         //"</p><hr><p>Magnitude: " + quake.properties.mag + "</p>"));
     };
 });
 
-//         // Add a marker for the quake and set its size and color based on magnitude
-//         L.circleMarker([quake.geometry.coordinates[1],quake.geometry.coordinates[0]], {
-//           "radius": quake.properties.mag * 3,
-//           "fillColor": color,
-//           "color": color,
-//           "weight": 2,
-//           "fillOpacity": .7,
-//           "opacity": 1
-//         },
-//         // Add a popup with the quake data for when the marker is clicked
-//         ).addTo(locationmap).bindPopup(("<h4>Location: " + quake.properties.place + 
-//         "</h4><hr><p>Date & Time: " + new Date(quake.properties.time) + 
-//         "</p><hr><p>Magnitude: " + quake.properties.mag + "</p>"));
-//     }
 
-//     // Set up the legend to display on bottom right of the screen
-//     magnitudeLevels = [0, 1, 2, 3, 4, 5];
 
-//     // construct HTML to show the legend as different colors for magnitudes
-//     var legendHTML = "<h3>Magnitude</h3>"
 
-//     for (var i = 0; i < magnitudeLevels.length; i++) {
-//         legendHTML += '<i style="background: ' + setColor(magnitudeLevels[i] + 1) + '"></i> ' +
-//             magnitudeLevels[i] + (magnitudeLevels[i + 1] ? '&ndash;' + magnitudeLevels[i + 1] + '<br>' : '+');
-//     }
-//     // Update the legend on the form
-//     document.querySelector(".legend").innerHTML = legendHTML;
 
-// });
-
-// // function to add the tectonic plate data to the form
-// d3.json(platesJSON).then(function(plates){
-//     var myStyle = {
-//         color: "#fc8527",
-//         weight: 2
-//     // Add plateData to tectonicPlates LayerGroups 
-//     };
-//     var platesLayer = plates.features;
-//         // Create a GeoJSON Layer the plateData
-//         L.geoJson(plates, myStyle).addTo(platesmap);
-// });
