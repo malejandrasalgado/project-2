@@ -26,10 +26,11 @@ var outdoorsmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tile
 
 // Initialize all of the LayerGroups we'll be using
 // one layer for the earthquake points and another for the tectonic plates
-var locationmap2020 = new L.LayerGroup();
-var locationmap2019 = new L.LayerGroup();
-var locationmapDif = new L.LayerGroup();
-
+var layers = {
+    locationmap2020: new L.LayerGroup(),
+    locationmap2019: new L.LayerGroup(),
+    locationmapDif: new L.LayerGroup()
+}
 // Create a baseMaps objects to hold the Layers
 
 var baseMaps = {
@@ -42,9 +43,9 @@ var baseMaps = {
 // Create an overlayMaps object to hold the earthquakes layer
 
 var overlayMaps = {
-    "2020": locationmap2020,
-    "2019": locationmap2019,
-    "Change": locationmapDif
+    "2020": layers.locationmap2020,
+    "2019": layers.locationmap2019,
+    "Change": layers.locationmapDif
 };
 
 // Create the map object with options
@@ -53,6 +54,7 @@ var map = L.map("map", {
     zoom: 15    ,
     layers: [lightmap, satellitemap, outdoorsmap]
 });
+
 
 // Create a layer control, pass in the baseMaps and overlayMaps. Add the layer control to the map
 
@@ -77,11 +79,10 @@ info.addTo(map);
   // Link for Earthquakes geoJSON
 var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/data.geojson"
 
-console.log(locationJSON)
+
 
 // Function to Determine Color of Marker Based on the Magnitude of the Earthquake
 function setColor(location) {
-    console.log("loc is",location)
     switch (true) {
     case location >= 5:
         return "#5d0128";
@@ -101,6 +102,7 @@ function setColor(location) {
 d3.json(locationJSON).then(function(location){
   // get a list of the earthquakes from the JSON
   var geoLayer = location.features;
+  var layercode;
 
     // iterate through the JSON for each sensor  set a marker on the map
     for (var i = 0; i < geoLayer.length; i++) {
@@ -110,7 +112,9 @@ d3.json(locationJSON).then(function(location){
         // get a color to represent the magnitude of the quake
         color = setColor(sensor.properties.Sensor);
         console.log("Coords ",[sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]] );
-        
+
+        myObservations = sensor.properties;
+        console.log(myObservations)
         // Add a marker for the location
         L.circleMarker([sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]], {
             "radius": 3,
@@ -121,7 +125,7 @@ d3.json(locationJSON).then(function(location){
             "opacity": 1
         },
         // Add a popup with the quake data for when the marker is clicked
-        ).addTo(locationmap2020).bindPopup(("<h4>Location: " + sensor.properties.Sensor));
+        ).addTo(layers.locationmap2020).bindPopup(("<h4>Location: " + sensor.properties.Sensor));
         //"</h4><hr><p>Date & Time: " + new Date(quake.properties.time) + 
         //"</p><hr><p>Magnitude: " + quake.properties.mag + "</p>"));
     };
