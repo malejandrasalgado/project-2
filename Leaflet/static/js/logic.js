@@ -77,7 +77,7 @@ info.onAdd = function() {
 info.addTo(map);
 
   // Link for Earthquakes geoJSON
-var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/data.geojson1"
+var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/data1.geojson"
 
 
 
