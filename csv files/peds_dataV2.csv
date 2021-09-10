@@ -1,4 +1,4 @@
-SensorID,Sensor,Midnight,1am,2am,3am,4am,5am,6am,7am,8am,9am,10am,11am,Noon,1pm,2pm,3pm,4pm,5pm,6pm,7pm,8pm,9pm,10pm,11pm,dailyTotal,avgDaily,data_date
+,Sensor,Midnight,1am,2am,3am,4am,5am,6am,7am,8am,9am,10am,11am,Noon,1pm,2pm,3pm,4pm,5pm,6pm,7pm,8pm,9pm,10pm,11pm,dailyTotal,avgDaily,data_date
 0,Bourke Street Mall (North),88,34,22,7,10,36,111,330,864,954,1248,1899,3178,3570,2943,2903,3041,3683,3013,2001,1508,795,420,183,32841,1368.375,1/08/2019
 1,Bourke Street Mall (South),24,6,12,9,2,7,67,192,512,610,812,1138,2254,2457,1765,1744,1687,1765,1353,753,607,289,103,6,18174,757.25,1/08/2019
 2,Melbourne Central,241,143,73,35,34,108,163,332,808,793,1046,1400,2357,2332,2243,2137,2521,2977,2965,2174,2046,1762,1142,570,30402,1266.75,1/08/2019
