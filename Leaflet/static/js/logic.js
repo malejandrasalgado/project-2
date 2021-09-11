@@ -77,7 +77,7 @@ info.onAdd = function() {
 info.addTo(map);
 
   // Link for Earthquakes geoJSON
-var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/csv%20files/data3.geojson"
+var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/dataFinal.geojson"
 
 
 
@@ -101,7 +101,7 @@ function setColor(location) {
 // Main function to load location data and update the map
 d3.json(locationJSON).then(function(location){
   // get a list of the earthquakes from the JSON
-  var geoLayer = location[0].features;
+  var geoLayer = location.features;
   var layercode;
     console.log(geoLayer)
     // iterate through the JSON for each sensor  set a marker on the map
