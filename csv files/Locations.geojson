@@ -1,0 +1,993 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke Street Mall (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81340998,
+            144.96522530000001
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke Street Mall (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81372266,
+            144.96515
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Melbourne Central"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81018489,
+            144.9628006
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Town Hall (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8149526,
+            144.9661936
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Princes Bridge"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81881889,
+            144.96799430000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders Street Station Underpass"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81905048,
+            144.966093
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Birrarung Marr"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81891818,
+            144.97380680000003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Webb Bridge"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.82327804,
+            144.94731130000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Southern Cross Station"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81992825,
+            144.9509522
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Victoria Point"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.818836600000004,
+            144.9470711
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Waterfront City"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81569887,
+            144.93995690000003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "New Quay"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81456127,
+            144.9430387
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flagstaff Station"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81233505,
+            144.956559
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Sandridge Bridge"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81995709,
+            144.96305149999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "State Library"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81059897,
+            144.9643227
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Collins St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81576810000001,
+            144.9655409
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Collins Place (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81362871,
+            144.9731826
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Collins Place (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81360099,
+            144.97279980000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Chinatown-Swanston St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81239626,
+            144.9656361
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Chinatown-Lt Bourke St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81165232,
+            144.9682634
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke St-Russell St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81246256,
+            144.9678603
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders St-Elizabeth St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81806306,
+            144.9650126
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Spencer St-Collins St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8191407,
+            144.9543435
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Spencer St-Collins St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81896291,
+            144.9542069
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Melbourne Convention Exhibition Centre"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.82372288,
+            144.9561615
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "QV Market-Elizabeth St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80847269,
+            144.9604394
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "QV Market-Peel St"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8059662,
+            144.9564073
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "The Arts Centre"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.82006672,
+            144.9683251
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "St Kilda Rd-Alexandra Gardens"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8197438,
+            144.96870980000003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lonsdale St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81111787,
+            144.9664575
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lygon St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80161831,
+            144.96670769999997
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "City Square"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8158781,
+            144.966749
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders St-Spring St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81483963,
+            144.9745721
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders St-Spark La"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81537761,
+            144.9741766
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Southbank"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.82020767,
+            144.9650458
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Queen St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81658884,
+            144.9613324
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lygon St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80310464,
+            144.9665977
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Alfred Place"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81383901,
+            144.96997140000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lonsdale St-Spring St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81005626,
+            144.9723458
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Grattan St-Swanston St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80031193,
+            144.963879
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Monash Rd-Swanston St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.79851002,
+            144.9642025
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Tin Alley-Swanston St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.79682089,
+            144.96450890000003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Little Collins St-Swanston St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81442768,
+            144.9661167
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders La-Swanston St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81634098,
+            144.9669241
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Pelham St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80230453,
+            144.9616265
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Melbourne Central-Elizabeth St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81142356,
+            144.9619502
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "QVM-Queen St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80620279,
+            144.9585479
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "QVM-Therry St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80719447,
+            144.9594763
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Faraday St-Lygon St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.79802328,
+            144.9672885
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "QVM-Franklin St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80851545,
+            144.95890659999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Elizabeth St-Lonsdale St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81243529,
+            144.9618872
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lincoln-Swanston (W)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80407319,
+            144.96326100000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Elizabeth St-La Trobe St (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81018903,
+            144.96138059999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Lonsdale St - Elizabeth St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81241939,
+            144.96148430000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke St Bridge"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81769633,
+            144.9502168
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke St - Spencer St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81697785,
+            144.95348080000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "RMIT Bld 80 - 445 Swanston Street"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.808025799999996,
+            144.9629546
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders La-Swanston St (West) Temporary"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81653111,
+            144.96694530000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "RMIT Building 14"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80737317,
+            144.9632461
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "380 Elizabeth St"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80961321,
+            144.9615709
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "La Trobe St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81011379,
+            144.9620237
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "231 Bourke St"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81333975,
+            144.9668472
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Royal Pde - Grattan St"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.79962918,
+            144.9573212
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Swanston St - City Square"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81551888,
+            144.96659119999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "State Library - New"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81058889,
+            144.9643339
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders Ln - Degraves St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81690024,
+            144.9655893
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders Ln - Degraves St (North)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8168425,
+            144.96570590000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders Ln - Degraves St (Crossing)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81685097,
+            144.965651
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Errol Street (East)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.80442398,
+            144.94936769999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Westwood Place"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81232775,
+            144.9713299
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Flinders St - ACMI"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81748768,
+            144.96908190000002
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Bourke St - Spencer St (South)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81685564,
+            144.95406930000001
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Spring St - Flinders St (West)"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.8152105,
+            144.97477719999998
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Macaulay Rd - Bellair St"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.79426811,
+            144.9304927
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Harbour Esplanade - Pedestrian Path"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81428483,
+            144.9442805
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "Sensor": "Harbour Esplanade - Bike Path"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -37.81488338,
+            144.944532
+          ]
+        }
+      }
+    ]
+  }
