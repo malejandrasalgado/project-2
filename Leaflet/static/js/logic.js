@@ -28,8 +28,7 @@ var outdoorsmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tile
 // one layer for the earthquake points and another for the tectonic plates
 var layers = {
     locationmap2020: new L.LayerGroup(),
-    locationmap2019: new L.LayerGroup(),
-    locationmapDif: new L.LayerGroup()
+    locationmap2019: new L.LayerGroup()
 }
 // Create a baseMaps objects to hold the Layers
 
@@ -39,13 +38,11 @@ var baseMaps = {
     "Outdoors": outdoorsmap
 };
 
-
 // Create an overlayMaps object to hold the earthquakes layer
 
 var overlayMaps = {
     "2020": layers.locationmap2020,
-    "2019": layers.locationmap2019,
-    "Change": layers.locationmapDif
+    "2019": layers.locationmap2019
 };
 
 // Create the map object with options
@@ -55,9 +52,7 @@ var map = L.map("map", {
     layers: [lightmap, satellitemap, outdoorsmap]
 });
 
-
 // Create a layer control, pass in the baseMaps and overlayMaps. Add the layer control to the map
-
 L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
@@ -79,55 +74,87 @@ info.addTo(map);
   // Link for Earthquakes geoJSON
 var locationJSON = "https://raw.githubusercontent.com/malejandrasalgado/project-2/main/dataFinal.geojson"
 
-
-
 // Function to Determine Color of Marker Based on the Magnitude of the Earthquake
-function setColor(location) {
-    switch (true) {
-    case location >= 5:
-        return "#5d0128";
-    case location >= 4:
-        return "#a80310";
-    case location >= 3:
-        return "#fb2b0a";
-    case location >= 2:
-        return "#fbc613";
-    case location >= 1:
-        return "#fcf81e";
+function setColor(layercode,total) {
+    switch (layercode) {
+    case layercode = "2020":
+        return "#1e22fc";
+    case layercode = "2019":
+        return "#22fc1e";
     default:
         return "#F01010";
     }
 }
+// Function to Determine Color of Marker Based on the Magnitude of the Earthquake
+function setLayer(layerdate) {
+    return(layerdate.substring(layerdate.length-4,layerdate.length));
+}
+
 // Main function to load location data and update the map
 d3.json(locationJSON).then(function(location){
-  // get a list of the earthquakes from the JSON
+   // Get a list of all the cameras
   var geoLayer = location.features;
   var layercode;
-    console.log(geoLayer)
     // iterate through the JSON for each sensor  set a marker on the map
     for (var i = 0; i < geoLayer.length; i++) {
-        
+
         // sensor is one location
         sensor = geoLayer[i]
-        // get a color to represent the magnitude of the quake
-        color = setColor(sensor.properties.Sensor);
-        console.log("Coords ",[sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]] );
+        layercode = setLayer(sensor.properties.data_date)
+        var detailHtml = "";
+        // get a color to represent the year of the data
+        color = setColor(layercode,sensor.properties.dailyTotal);
 
-        myObservations = sensor.properties;
-        console.log(myObservations)
+        var currentCamera = sensor.properties.Sensor;
+        var tbwidth = 2;
+        var tbentry = 0;
+
+        var geoLayer2 = location.features;
+
+        detailHtml = '<table style="width:100%"><tr><th>Date</th><th>Pedestrian Count</th><th>Date</th><th>Pedestrian Count</th></tr>';
+
+        for (var x = 0; x < geoLayer2.length; x++) {
+            cameradata = geoLayer2[x];
+           
+            var thisCamera = cameradata.properties.Sensor;
+            var thisYear = setLayer(cameradata.properties.data_date);
+            if (thisCamera == currentCamera &&
+                thisYear ==layercode) {
+                    if(tbentry == 0)
+                        detailHtml += "<tr>" 
+                    
+
+                    detailHtml += "<td>"+ cameradata.properties.data_date + "</td>" + '<td align="right">'+cameradata.properties.dailyTotal.toLocaleString("en-AU") +"</td>";
+                    
+                    tbentry++;
+            }
+
+            if (tbentry ==tbwidth){
+                tbentry = 0;
+                detailHtml += "</tr>" 
+            }
+        }
+
+        if(tbentry ==1){
+            detailHtml += "</tr>" 
+        }
+        detailHtml += "</table>";
+
+        console.log("detail is",detailHtml)
         // Add a marker for the location
         L.circleMarker([sensor.geometry.coordinates[1],sensor.geometry.coordinates[0]], {
-            "radius": 3,
-            "fillColor": color,
+            "radius": sensor.properties.dailyTotal/2000,
+            //"fillColor": "#F01010",
             "color": color,
-            "weight": 2,
-            "fillOpacity": .7,
+            "weight": 5,
+            "fillOpacity": 1,
             "opacity": 1
         },
-        // Add a popup with the quake data for when the marker is clicked
-        ).addTo(layers.locationmap2020).bindPopup(("<h4>Location: " + sensor.properties.Sensor));
-        //"</h4><hr><p>Date & Time: " + new Date(quake.properties.time) + 
-        //"</p><hr><p>Magnitude: " + quake.properties.mag + "</p>"));
+        // Add a popup with the location data for when the marker is clicked - add something fancy later
+        ).addTo(overlayMaps[layercode]).bindPopup(("<h4>Location: " + sensor.properties.Sensor + "</h4><hr>" +
+        // "</p><hr><p>Date: " + sensor.properties.data_date + "</p>" +
+        // "<p>Total pedestrians: " + sensor.properties.dailyTotal.toLocaleString("en-AU") + "</p>")+
+        detailHtml ),{minWidth : 350});
     };
 });
 
