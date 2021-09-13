@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    Select Date: 
+    <select name="date" id="data_date" onChange="changeDate(this.value);">
+        <option value="" disabled selected>Select</option>
+    </select>
+
+    Select Sensor: 
+    <select name="sensor" id="sensor" onChange="plot(this.value);">
+        <option value="" disabled selected>Select</option>
+    </select>
+
+    Line: <input type="checkbox" id="lineChart" onClick="changeToLine(this.value)">
+    <div id="myDiv" style="width: 980px; height: 600px;">
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
