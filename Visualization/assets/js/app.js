@@ -132,7 +132,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
 
     var toolTip = d3.tip()
         .attr('class', 'd3-tip')
-        .offset([-8, 0])
+        .offset([80,-60])
         .html(function(d) {
             return (`${xLabel} ${styleXAxis(d[chosenXAxis], chosenXAxis)}<br>${yLabel} ${d[chosenYAxis]}`);
      });
@@ -208,7 +208,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
         .attr('dy', 4)
         .attr('dx', -1)
         .attr('font-size', '10px')
-        .text(function(d){return chosenXAxis})
+        .text(function(d){return d.date})
 
      // Create group for the Xaxis labels
     
@@ -219,7 +219,7 @@ function updateToolTip(chosenXAxis,chosenYAxis, circlesGroup) {
     var yearLabel = xLabelsGroup.append("text")
         .classed('aText', true)
         .classed("active", true)
-        .attr("x", 0)
+        .attr("x", -1)
         .attr("y", 20)
         .attr("value", "date") // value to grab for event listener
         

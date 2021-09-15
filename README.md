@@ -32,7 +32,7 @@ Transform the csv files into GeoJson file using Phython and GeoJson validador
 
 ### Leaflet
 
-1. Locations of the camaras
+1. Location of the camaras
 
 ![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/location.png)
 
