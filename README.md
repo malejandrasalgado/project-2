@@ -32,11 +32,12 @@ Transform the csv files into GeoJson file using Phython and GeoJson validador
 
 ### Leaflet
 
-1. locations of the camaras
+1. Locations of the camaras
 
 ![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/location.png)
 
-2. dysplay information as the location, date and total account of each camara using HTML table
-   ![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/display%20inf.png)
+2. Dysplay information as the location, date and total account of each camara using HTML table
+
+![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/display%20inf.png)
 
 ### Visualization
