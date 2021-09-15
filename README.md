@@ -34,14 +34,18 @@ Transform the csv files into GeoJson file using Phython and GeoJson validador
 
 1. Location of the camaras
 
-![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/location.png)
+![](https://github.com/malejandrasalgado/project-2/blob/main/Images/location.png)
 
 2. Dysplay information as the location, date and total account of each camara using HTML table
 
-![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/display%20inf.png)
+![](https://github.com/malejandrasalgado/project-2/blob/main/Images/display%20inf.png)
 
 ### Visualization using D3
 
 2. Show the pedestrian volume per day in August 2019 and 2020 in Melbourne
 
-![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/Visualization.png)
+![](https://github.com/malejandrasalgado/project-2/blob/main/Images/Visualization.png)
+
+### Visualization using Plotty
+
+![](https://github.com/malejandrasalgado/project-2/blob/main/Images/Ploty.png)
