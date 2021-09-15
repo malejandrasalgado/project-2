@@ -10,7 +10,6 @@ The task involves:
 - Data Modelling
 - Data Engineering
 - Data Analysis
-- Markdown
 
 ### Data cleaning using Python
 
@@ -26,10 +25,18 @@ Transform the csv files into GeoJson file using Phython and GeoJson validador
 
 - Data collection of the number of pedestrians in Melburne on August 2019 and 2020 to visualise the data using HTML/CSS, JavaScript, D3, Plotly,Leaflet
 
-## Observations
-
-### Leaflet
+## Purpose of the project
 
 - View a representation of pedestrian volume in August 2019 and 2020 in Melbourne
 - See the impact of COVID 19 and weather conditions, on pedestrian activity in the city
+
+### Leaflet
+
+1. locations of the camaras
+
 ![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/location.png)
+
+2. dysplay information as the location, date and total account of each camara using HTML table
+   ![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/display%20inf.png)
+
+### Visualization
