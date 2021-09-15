@@ -1,40 +1,34 @@
-# project-2
+# Melbourne counting pedestrians August 2019 and 2020
 
-Proposal
+## Introduction
 
-Topic: Melbourne Pedestrian Analysis Pre-Covid-19 and During Covid-19
+The purpose of this project is to apply and complement the knowledge and skills acquired **HTML/CSS**, **JavaScript**, **D3**, **Plotty**,**Leaflet**, **Python**
 
-Team Members: Ale Reyes, Firdaus Mertha, Sreemanth G, Frederick
+The task involves:
 
-We are getting our data source from the Melbourne Pedestrian website called http://www.pedestrian.melbourne.vic.gov.au
+- Data Cleaning
+- Data Modelling
+- Data Engineering
+- Data Analysis
+- Markdown
 
-Our Visualisation will include:
+### Data cleaning using Python
 
-HTML/CSS
-Java Script
-D3.Js
-Plotly
-Leaflet (Optional for Weather) and Location of the camera
-JS library
-SQL Database/Mongo
+1. Remove irrelevant data as the range date
+2. Change formats to the data
+3. Add information (lat,long)
 
-The objective of the Project:
+### Data Modelling
 
-Analysis:
+Transform the csv files into GeoJson file using Phython and GeoJson validador
 
-Number of Pedestrian pre-Covid vs during Covid in the Melbourne CBD
-The correlation between weather and the number of pedestrians
-The peak hours of traffic between pre-Covid and during Covid
+### Data Engineering
 
-Work:
+- Data collection of the number of pedestrians in Melburne on August 2019 and 2020 to visualise the data using HTML/CSS, JavaScript, D3, Plotly,Leaflet
 
-1. Java Script (Fred)
-   The use of the Java Script is to provide data based on the filter by the sensor, the weather, the date and the hours D3.Js (Firdaus)
-2. Data Visualization of the total of pedestrians will be presented as a bar chart filtered by date and by hours
-   3.Plotly (Sree) We will be creating an interactive Dashboard using Plotly to visualise based on the filters
-   4.Leaflet and API (Ale)
-   We will present the marker showing how much is the pedestrian and the camera location
-   Using API to request for the weather and the map
-3. SQL Lite (Fred)
-   Importing CSV file using SQLite using sql.js
-4. HTML/CSS (Everyone)
+## Observations
+
+### Leaflet
+
+- View a representation of pedestrian volume in August 2019 and 2020 in Melbourne
+- See the impact of COVID 19 and weather conditions, on pedestrian activity in the city
