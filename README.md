@@ -32,3 +32,4 @@ Transform the csv files into GeoJson file using Phython and GeoJson validador
 
 - View a representation of pedestrian volume in August 2019 and 2020 in Melbourne
 - See the impact of COVID 19 and weather conditions, on pedestrian activity in the city
+![](https://github.com/malejandrasalgado/project-2/blob/main/Imag/location.png)
