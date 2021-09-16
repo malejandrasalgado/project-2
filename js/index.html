@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Melbourne Pedestrian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">Melbourne CBD
+            <img class="nav-ufo" src="images/com-printlogo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>Melbourne Pedestrian</h1>
+      <a style="color: white;" onClick="togglePlay()">
+        <p style="color:rgb(0, 193, 252);">Keep Walking</p>
+      </a>
+    </div>
+    <div class="container">
+      <button class="btn btn-default dropdown-toggle pull-right" id="download-menu" type="button" data-toggle="dropdown">Download
+        <span class="caret"></span>
+      </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a id="download-csv" role="menuitem" tabindex="-1">CSV</a></li>
+          <li role="presentation"><a id="download-json" role="menuitem" tabindex="-1">JSON</a></li>
+        </ul>
+      <div class="row margin-top-25">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form id= "ufo-form" onSubmit="return false;">
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Sensor</label>
+                        <input class="form-control" id="city" type="text" placeholder="Melbourne">
+                      </li>
+                     <li class="filter list-group-item">
+                        <label for="date">Enter Time</label>
+                        <input class="form-control" id="state" type="text" placeholder="6 am">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  <button id="reset-btn" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-repeat"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <a href="index.html">Basic Search</a>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+				  <th class="table-head">TIME</th>
+                  <th class="table-head">DATE</th>
+                  <th class="table-head">SENSOR LOCATION</th>
+                  <th class="table-head">PEDESTRIAN COUNT</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">COVID-19</span>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app-2.js"></script>
+</body>
+
+</html>
