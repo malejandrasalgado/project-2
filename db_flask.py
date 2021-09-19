@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, render_template
-from config import *
+##from config import *
 from sqlalchemy import create_engine
 import psycopg2
 
@@ -20,8 +20,9 @@ def home():
 
 @app.route('/data')
 def datacsv():
-    data_imported = conn.fetchall()
-    return render_template('data.html',data_imported)
+    ##data_imported = conn.fetchall()
+    data_imported = "good morning"
+    return render_template('data.html',d_i=data_imported)
 
 
 ##@app.route("/test", methods=['post', 'get'])
